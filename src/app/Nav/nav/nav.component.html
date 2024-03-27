@@ -1,0 +1,12 @@
+<h1 [class.text-change]="toggle">{{tittle}}</h1>
+
+<p [class.text-change]="toggle">{{tittle}}</p>
+
+<input class="input-text" [value]="tittle">
+
+
+<h2 [style.Color]="toggle ? 'yellow': 'blue'">style binding</h2>
+
+<!----- two way Bind -->
+
+<input type="text" [(ngModel)]="twowayBind" (keydown.enter)="keyPress()">
